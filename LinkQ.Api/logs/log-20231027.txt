@@ -1,0 +1,226 @@
+2023-10-27 17:22:01.155 +07:00 [INF] Now listening on: https://localhost:7065
+2023-10-27 17:22:01.192 +07:00 [INF] Now listening on: http://localhost:5202
+2023-10-27 17:22:01.194 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-27 17:22:01.195 +07:00 [INF] Hosting environment: Development
+2023-10-27 17:22:01.195 +07:00 [INF] Content root path: D:\survey\sources\backend\LinkQ.Api
+2023-10-27 19:50:07.202 +07:00 [INF] Now listening on: https://localhost:7065
+2023-10-27 19:50:07.260 +07:00 [INF] Now listening on: http://localhost:5202
+2023-10-27 19:50:07.271 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-27 19:50:07.271 +07:00 [INF] Hosting environment: Development
+2023-10-27 19:50:07.271 +07:00 [INF] Content root path: D:\survey\sources\backend\LinkQ.Api
+2023-10-27 19:57:39.901 +07:00 [INF] Now listening on: https://localhost:7065
+2023-10-27 19:57:39.922 +07:00 [INF] Now listening on: http://localhost:5202
+2023-10-27 19:57:39.923 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-27 19:57:39.923 +07:00 [INF] Hosting environment: Development
+2023-10-27 19:57:39.923 +07:00 [INF] Content root path: D:\survey\sources\backend\LinkQ.Api
+2023-10-27 19:57:56.621 +07:00 [ERR] HTTP GET /api/Survey/quesion responded 500 in 9652.5061 ms
+System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Data.SqlClient, Version=5.0.0.0, Culture=neutral, PublicKeyToken=23ec7fc2d6eaa4a5'. The system cannot find the file specified.
+File name: 'Microsoft.Data.SqlClient, Version=5.0.0.0, Culture=neutral, PublicKeyToken=23ec7fc2d6eaa4a5'
+   at LinkQ.Data.DataProviders.MsSqlLinkQDataProvider.GetInternalDbConnection(String connectionString)
+   at LinkQ.Data.DataProviders.BaseDbConnection.CreateDbConnection(String connectionString)
+   at LinkQ.Data.DataProviders.BaseDataProvider.QueryAsync[T](String sql, Object param, Nullable`1 commandType, IDbTransaction trans)
+   at LinkQ.Api.factories.SurveyModelFactory.GetQuestionAsync() in D:\survey\sources\backend\LinkQ.Api\factories\SurveyModelFactory.cs:line 16
+   at LinkQ.Api.Controllers.SurveyController.LoadDataDNNSourceAsync() in D:\survey\sources\backend\LinkQ.Api\Controllers\SurveyController.cs:line 21
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2023-10-27 19:57:56.696 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Data.SqlClient, Version=5.0.0.0, Culture=neutral, PublicKeyToken=23ec7fc2d6eaa4a5'. The system cannot find the file specified.
+File name: 'Microsoft.Data.SqlClient, Version=5.0.0.0, Culture=neutral, PublicKeyToken=23ec7fc2d6eaa4a5'
+   at LinkQ.Data.DataProviders.MsSqlLinkQDataProvider.GetInternalDbConnection(String connectionString)
+   at LinkQ.Data.DataProviders.BaseDbConnection.CreateDbConnection(String connectionString)
+   at LinkQ.Data.DataProviders.BaseDataProvider.QueryAsync[T](String sql, Object param, Nullable`1 commandType, IDbTransaction trans)
+   at LinkQ.Api.factories.SurveyModelFactory.GetQuestionAsync() in D:\survey\sources\backend\LinkQ.Api\factories\SurveyModelFactory.cs:line 16
+   at LinkQ.Api.Controllers.SurveyController.LoadDataDNNSourceAsync() in D:\survey\sources\backend\LinkQ.Api\Controllers\SurveyController.cs:line 21
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-10-27 19:57:56.722 +07:00 [ERR] Connection id "0HMUMTH6NRBPH", Request id "0HMUMTH6NRBPH:00000001": An unhandled exception was thrown by the application.
+System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Data.SqlClient, Version=5.0.0.0, Culture=neutral, PublicKeyToken=23ec7fc2d6eaa4a5'. The system cannot find the file specified.
+File name: 'Microsoft.Data.SqlClient, Version=5.0.0.0, Culture=neutral, PublicKeyToken=23ec7fc2d6eaa4a5'
+   at LinkQ.Data.DataProviders.MsSqlLinkQDataProvider.GetInternalDbConnection(String connectionString)
+   at LinkQ.Data.DataProviders.BaseDbConnection.CreateDbConnection(String connectionString)
+   at LinkQ.Data.DataProviders.BaseDataProvider.Dispose(Boolean disposing)
+   at LinkQ.Data.DataProviders.BaseDataProvider.Dispose()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.DisposeAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.Features.RequestServicesFeature.<DisposeAsync>g__Awaited|9_0(RequestServicesFeature servicesFeature, ValueTask vt)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.<FireOnCompleted>g__ProcessEvents|242_0(HttpProtocol protocol, Stack`1 events)
+2023-10-27 19:59:43.471 +07:00 [INF] Now listening on: https://localhost:7065
+2023-10-27 19:59:43.491 +07:00 [INF] Now listening on: http://localhost:5202
+2023-10-27 19:59:43.492 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-27 19:59:43.492 +07:00 [INF] Hosting environment: Development
+2023-10-27 19:59:43.492 +07:00 [INF] Content root path: D:\survey\sources\backend\LinkQ.Api
+2023-10-27 20:00:01.126 +07:00 [ERR] HTTP GET /api/Survey/quesion responded 500 in 11432.5764 ms
+System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Data.SqlClient, Version=5.0.0.0, Culture=neutral, PublicKeyToken=23ec7fc2d6eaa4a5'. The system cannot find the file specified.
+File name: 'Microsoft.Data.SqlClient, Version=5.0.0.0, Culture=neutral, PublicKeyToken=23ec7fc2d6eaa4a5'
+   at LinkQ.Data.DataProviders.MsSqlLinkQDataProvider.GetInternalDbConnection(String connectionString)
+   at LinkQ.Data.DataProviders.BaseDbConnection.CreateDbConnection(String connectionString)
+   at LinkQ.Data.DataProviders.BaseDataProvider.QueryAsync[T](String sql, Object param, Nullable`1 commandType, IDbTransaction trans)
+   at LinkQ.Api.factories.SurveyModelFactory.GetQuestionAsync() in D:\survey\sources\backend\LinkQ.Api\factories\SurveyModelFactory.cs:line 16
+   at LinkQ.Api.Controllers.SurveyController.LoadDataDNNSourceAsync() in D:\survey\sources\backend\LinkQ.Api\Controllers\SurveyController.cs:line 21
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2023-10-27 20:00:01.160 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Data.SqlClient, Version=5.0.0.0, Culture=neutral, PublicKeyToken=23ec7fc2d6eaa4a5'. The system cannot find the file specified.
+File name: 'Microsoft.Data.SqlClient, Version=5.0.0.0, Culture=neutral, PublicKeyToken=23ec7fc2d6eaa4a5'
+   at LinkQ.Data.DataProviders.MsSqlLinkQDataProvider.GetInternalDbConnection(String connectionString)
+   at LinkQ.Data.DataProviders.BaseDbConnection.CreateDbConnection(String connectionString)
+   at LinkQ.Data.DataProviders.BaseDataProvider.QueryAsync[T](String sql, Object param, Nullable`1 commandType, IDbTransaction trans)
+   at LinkQ.Api.factories.SurveyModelFactory.GetQuestionAsync() in D:\survey\sources\backend\LinkQ.Api\factories\SurveyModelFactory.cs:line 16
+   at LinkQ.Api.Controllers.SurveyController.LoadDataDNNSourceAsync() in D:\survey\sources\backend\LinkQ.Api\Controllers\SurveyController.cs:line 21
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-10-27 20:00:01.176 +07:00 [ERR] Connection id "0HMUMTIBEL4VR", Request id "0HMUMTIBEL4VR:00000001": An unhandled exception was thrown by the application.
+System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Data.SqlClient, Version=5.0.0.0, Culture=neutral, PublicKeyToken=23ec7fc2d6eaa4a5'. The system cannot find the file specified.
+File name: 'Microsoft.Data.SqlClient, Version=5.0.0.0, Culture=neutral, PublicKeyToken=23ec7fc2d6eaa4a5'
+   at LinkQ.Data.DataProviders.MsSqlLinkQDataProvider.GetInternalDbConnection(String connectionString)
+   at LinkQ.Data.DataProviders.BaseDbConnection.CreateDbConnection(String connectionString)
+   at LinkQ.Data.DataProviders.BaseDataProvider.Dispose(Boolean disposing)
+   at LinkQ.Data.DataProviders.BaseDataProvider.Dispose()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.DisposeAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.Features.RequestServicesFeature.<DisposeAsync>g__Awaited|9_0(RequestServicesFeature servicesFeature, ValueTask vt)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.<FireOnCompleted>g__ProcessEvents|242_0(HttpProtocol protocol, Stack`1 events)
+2023-10-27 23:36:26.161 +07:00 [INF] Now listening on: https://localhost:7065
+2023-10-27 23:36:26.189 +07:00 [INF] Now listening on: http://localhost:5202
+2023-10-27 23:36:26.191 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-27 23:36:26.191 +07:00 [INF] Hosting environment: Development
+2023-10-27 23:36:26.191 +07:00 [INF] Content root path: D:\survey\sources\backend\LinkQ.Api
+2023-10-27 23:36:45.999 +07:00 [ERR] HTTP GET /api/Survey/quesion responded 500 in 10370.7625 ms
+System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Data.SqlClient, Version=5.0.0.0, Culture=neutral, PublicKeyToken=23ec7fc2d6eaa4a5'. The system cannot find the file specified.
+File name: 'Microsoft.Data.SqlClient, Version=5.0.0.0, Culture=neutral, PublicKeyToken=23ec7fc2d6eaa4a5'
+   at LinkQ.Data.DataProviders.MsSqlLinkQDataProvider.GetInternalDbConnection(String connectionString)
+   at LinkQ.Data.DataProviders.BaseDbConnection.CreateDbConnection(String connectionString)
+   at LinkQ.Data.DataProviders.BaseDataProvider.QueryAsync(String sql, Object param, Nullable`1 commandType, IDbTransaction trans)
+   at LinkQ.Api.factories.SurveyModelFactory.GetQuestionAsync() in D:\survey\sources\backend\LinkQ.Api\factories\SurveyModelFactory.cs:line 16
+   at LinkQ.Api.Controllers.SurveyController.LoadDataDNNSourceAsync() in D:\survey\sources\backend\LinkQ.Api\Controllers\SurveyController.cs:line 21
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2023-10-27 23:36:46.068 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Data.SqlClient, Version=5.0.0.0, Culture=neutral, PublicKeyToken=23ec7fc2d6eaa4a5'. The system cannot find the file specified.
+File name: 'Microsoft.Data.SqlClient, Version=5.0.0.0, Culture=neutral, PublicKeyToken=23ec7fc2d6eaa4a5'
+   at LinkQ.Data.DataProviders.MsSqlLinkQDataProvider.GetInternalDbConnection(String connectionString)
+   at LinkQ.Data.DataProviders.BaseDbConnection.CreateDbConnection(String connectionString)
+   at LinkQ.Data.DataProviders.BaseDataProvider.QueryAsync(String sql, Object param, Nullable`1 commandType, IDbTransaction trans)
+   at LinkQ.Api.factories.SurveyModelFactory.GetQuestionAsync() in D:\survey\sources\backend\LinkQ.Api\factories\SurveyModelFactory.cs:line 16
+   at LinkQ.Api.Controllers.SurveyController.LoadDataDNNSourceAsync() in D:\survey\sources\backend\LinkQ.Api\Controllers\SurveyController.cs:line 21
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-10-27 23:36:46.089 +07:00 [ERR] Connection id "0HMUN1BEK38L9", Request id "0HMUN1BEK38L9:00000009": An unhandled exception was thrown by the application.
+System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Data.SqlClient, Version=5.0.0.0, Culture=neutral, PublicKeyToken=23ec7fc2d6eaa4a5'. The system cannot find the file specified.
+File name: 'Microsoft.Data.SqlClient, Version=5.0.0.0, Culture=neutral, PublicKeyToken=23ec7fc2d6eaa4a5'
+   at LinkQ.Data.DataProviders.MsSqlLinkQDataProvider.GetInternalDbConnection(String connectionString)
+   at LinkQ.Data.DataProviders.BaseDbConnection.CreateDbConnection(String connectionString)
+   at LinkQ.Data.DataProviders.BaseDataProvider.Dispose(Boolean disposing)
+   at LinkQ.Data.DataProviders.BaseDataProvider.Dispose()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.DisposeAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.Features.RequestServicesFeature.<DisposeAsync>g__Awaited|9_0(RequestServicesFeature servicesFeature, ValueTask vt)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.<FireOnCompleted>g__ProcessEvents|242_0(HttpProtocol protocol, Stack`1 events)
+2023-10-27 23:38:46.885 +07:00 [INF] Now listening on: https://localhost:7065
+2023-10-27 23:38:46.905 +07:00 [INF] Now listening on: http://localhost:5202
+2023-10-27 23:38:46.906 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-27 23:38:46.907 +07:00 [INF] Hosting environment: Development
+2023-10-27 23:38:46.907 +07:00 [INF] Content root path: D:\survey\sources\backend\LinkQ.Api
+2023-10-27 23:39:08.993 +07:00 [INF] Now listening on: https://localhost:7065
+2023-10-27 23:39:09.012 +07:00 [INF] Now listening on: http://localhost:5202
+2023-10-27 23:39:09.013 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-27 23:39:09.013 +07:00 [INF] Hosting environment: Development
+2023-10-27 23:39:09.013 +07:00 [INF] Content root path: D:\survey\sources\backend\LinkQ.Api
+2023-10-27 23:40:30.751 +07:00 [INF] Now listening on: https://localhost:7065
+2023-10-27 23:40:30.773 +07:00 [INF] Now listening on: http://localhost:5202
+2023-10-27 23:40:30.774 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-27 23:40:30.774 +07:00 [INF] Hosting environment: Development
+2023-10-27 23:40:30.774 +07:00 [INF] Content root path: D:\survey\sources\backend\LinkQ.Api
+2023-10-27 23:41:17.745 +07:00 [INF] HTTP GET /api/survey/quesion responded 200 in 36875.4419 ms
+2023-10-27 23:41:17.760 +07:00 [ERR] Connection id "0HMUN1DNH8PQ1", Request id "0HMUN1DNH8PQ1:00000009": An unhandled exception was thrown by the application.
+System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Data.SqlClient, Version=5.0.0.0, Culture=neutral, PublicKeyToken=23ec7fc2d6eaa4a5'. The system cannot find the file specified.
+File name: 'Microsoft.Data.SqlClient, Version=5.0.0.0, Culture=neutral, PublicKeyToken=23ec7fc2d6eaa4a5'
+   at LinkQ.Data.DataProviders.MsSqlLinkQDataProvider.GetInternalDbConnection(String connectionString)
+   at LinkQ.Data.DataProviders.BaseDbConnection.CreateDbConnection(String connectionString)
+   at LinkQ.Data.DataProviders.BaseDataProvider.Dispose(Boolean disposing)
+   at LinkQ.Data.DataProviders.BaseDataProvider.Dispose()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.DisposeAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.Features.RequestServicesFeature.<DisposeAsync>g__Awaited|9_0(RequestServicesFeature servicesFeature, ValueTask vt)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.<FireOnCompleted>g__ProcessEvents|242_0(HttpProtocol protocol, Stack`1 events)

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<JwtParameter>
+  <ReferralUrl>https://linkq.com.vn</ReferralUrl>
+  <ValidateIssuer>false</ValidateIssuer>
+  <ValidateAudience>false</ValidateAudience>
+  <ValidateLifetime>true</ValidateLifetime>
+  <Issuers>https://api.linkq.vn,https://sub.linkq.vn</Issuers>
+  <Audiences>https://erp.linkq.vn,https://client.linkq.vn</Audiences>
+  <ReferralId></ReferralId>
+  <PrivateKey>XVM6kQ00eGyvRsJcl1cbd3nSV4E3T32/++PGoOqg9oUk4YHLbqkN9U8tc5OJsyjEw4Y0D8sBTPr1dGGIdHGN4Q==</PrivateKey>
+  <RsaPrivateKey></RsaPrivateKey>
+  <RsaPublicKey></RsaPublicKey>
+</JwtParameter>

@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="AutoMapper" Version="12.0.1" />
+	  <PackageReference Include="Dapper" Version="2.1.15" />
+	  <PackageReference Include="MailKit" Version="4.2.0" />
+	  <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.2" />
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.13" />
+	  <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="7.0.13" />
+	  <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.13" />
+	  <PackageReference Include="Microsoft.Extensions.Caching.SqlServer" Version="7.0.13" />
+	  <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="7.0.13" />
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	  <PackageReference Include="Serilog.AspNetCore" Version="7.0.0" />
+	  <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+	  <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="LinkQ.Api.Framework">
+      <HintPath>..\Libraries\LinkQ.Api.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="LinkQ.Core">
+      <HintPath>..\Libraries\LinkQ.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="LinkQ.Data">
+      <HintPath>..\Libraries\LinkQ.Data.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

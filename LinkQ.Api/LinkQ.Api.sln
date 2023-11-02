@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkQ.Api", "LinkQ.Api.csproj", "{3F325CB4-9657-4293-81DC-1C79019ADA32}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{8F01BDFB-ADAB-4FB1-9E03-CDFDBC014460}"
+	ProjectSection(SolutionItems) = preProject
+		..\Libraries\LinkQ.Api.Framework.dll = ..\Libraries\LinkQ.Api.Framework.dll
+		..\Libraries\LinkQ.Core.dll = ..\Libraries\LinkQ.Core.dll
+		..\Libraries\LinkQ.Data.dll = ..\Libraries\LinkQ.Data.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F325CB4-9657-4293-81DC-1C79019ADA32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F325CB4-9657-4293-81DC-1C79019ADA32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F325CB4-9657-4293-81DC-1C79019ADA32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F325CB4-9657-4293-81DC-1C79019ADA32}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9AED778-B6BC-4902-B5D0-FFAC64870B21}
+	EndGlobalSection
+EndGlobal
